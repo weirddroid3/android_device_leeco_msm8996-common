@@ -1,0 +1,2 @@
+allow atfwd sysfs:file { open read };
+
