@@ -22,7 +22,16 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#include <cutils/properties.h>
+#include <stdint.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+int32_t property_get_int32(const char *key, int32_t default_value);
+#ifdef __cplusplus
+}
+#endif
+
 #include <string.h>
 static inline const char *BtmGetDefaultName()
 {
@@ -51,6 +60,4 @@ static inline const char *BtmGetDefaultName()
 
 /* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
 #define AVDT_NUM_SEPS 12
-
-#undef PROPERTY_VALUE_MAX
 #endif
