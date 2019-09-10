@@ -137,8 +137,8 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
 # Device settings
-PRODUCT_PACKAGES += \
-    DeviceSettings
+#PRODUCT_PACKAGES += \
+#    DeviceSettings
 
 # Display
 PRODUCT_PACKAGES += \
